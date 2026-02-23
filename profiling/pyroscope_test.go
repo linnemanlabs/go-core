@@ -1,4 +1,4 @@
-package prof
+package profiling
 
 import (
 	"context"
