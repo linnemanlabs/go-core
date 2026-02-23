@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/health"
-	"github.com/keithlinneman/linnemanlabs-web/internal/httpserver"
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/health"
+	"github.com/linnemanlabs/go-core/httpserver"
+	"github.com/linnemanlabs/go-core/log"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // Start admin HTTP server with /metrics, /healthz, /readyz, pprof debug endpoints

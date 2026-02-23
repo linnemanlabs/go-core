@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/health"
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/health"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 // test helpers

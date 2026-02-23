@@ -3,7 +3,7 @@ package opshttp
 import (
 	"net/http"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/health"
+	"github.com/linnemanlabs/go-core/health"
 )
 
 type Options struct {
