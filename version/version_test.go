@@ -71,26 +71,18 @@ func setCIDefaults() {
 	GoVersion = "go1.23.0"
 	VCSDirty = ptrBool(false)
 	BuildActor = "keithlinneman"
-	Repository = "https://github.com/keithlinneman/linnemanlabs-web"
+	Repository = "https://github.com/linnemanlabs/go-core"
 	BuildSystem = "github-actions"
 	BuilderIdentity = "arn:aws:iam::123456789012:role/build"
 	BuildRunID = "12345"
-	BuildRunURL = "https://github.com/keithlinneman/linnemanlabs-web/actions/runs/12345"
+	BuildRunURL = "https://github.com/linnemanlabs/go-core/actions/runs/12345"
 	ReleaseId = "rel-20250201-abc123"
 	EvidenceBucket = "phxi-build-prod-use2-deployment-artifacts"
-	EvidencePrefix = "apps/linnemanlabs-web/server/attestations"
+	EvidencePrefix = "apps/linnemanlabs/go-core/attestations"
 	CosignKeyRef = "arn:aws:ssm:us-east-2:123456789012:parameter/signing/cosign"
 }
 
 func ptrBool(b bool) *bool { return &b }
-
-// AppName
-
-func TestAppName(t *testing.T) {
-	if AppName != "linnemanlabs-web" {
-		t.Fatalf("AppName = %q", AppName)
-	}
-}
 
 // Get - local build defaults
 
@@ -158,7 +150,7 @@ func TestGet_CIBuild_AllFields(t *testing.T) {
 	if info.BuildActor != "keithlinneman" {
 		t.Fatalf("BuildActor = %q", info.BuildActor)
 	}
-	if info.Repository != "https://github.com/keithlinneman/linnemanlabs-web" {
+	if info.Repository != "https://github.com/linnemanlabs/go-core" {
 		t.Fatalf("Repository = %q", info.Repository)
 	}
 	if info.BuildRunID != "12345" {
@@ -192,7 +184,7 @@ func TestGet_CIBuild_ProvenanceFields(t *testing.T) {
 	if info.EvidenceBucket != "phxi-build-prod-use2-deployment-artifacts" {
 		t.Fatalf("EvidenceBucket = %q", info.EvidenceBucket)
 	}
-	if info.EvidencePrefix != "apps/linnemanlabs-web/server/attestations" {
+	if info.EvidencePrefix != "apps/linnemanlabs/go-core/attestations" {
 		t.Fatalf("EvidencePrefix = %q", info.EvidencePrefix)
 	}
 }
