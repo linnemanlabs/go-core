@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 // Disabled path

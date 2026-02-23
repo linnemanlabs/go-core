@@ -13,7 +13,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 // test helpers

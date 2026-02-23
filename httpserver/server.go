@@ -14,9 +14,9 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/health"
-	"github.com/keithlinneman/linnemanlabs-web/internal/httpmw"
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/health"
+	"github.com/linnemanlabs/go-core/httpmw"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // NewHandler builds an HTTP handler with routes + middleware

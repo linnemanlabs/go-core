@@ -9,8 +9,8 @@ import (
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/log"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // Recover is a middleware that recovers from panics in HTTP handlers, logs the panic with stack trace, and returns a 500 response.

@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 type App struct {

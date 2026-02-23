@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/keithlinneman/linnemanlabs-web/internal/health"
-	"github.com/keithlinneman/linnemanlabs-web/internal/httpmw"
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/health"
+	"github.com/linnemanlabs/go-core/httpmw"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 type Options struct {
@@ -20,6 +20,6 @@ type Options struct {
 	RateLimitMW  func(http.Handler) http.Handler
 	Health       health.Probe
 	Readiness    health.Probe
-	ContentInfo  httpmw.ContentInfo       // For X-Content-Bundle-Version and X-Content-Hash headers
-	ClientIPOpts httpmw.ClientIPOptions   // Client IP extraction options (TrustedHops, etc.)
+	ContentInfo  httpmw.ContentInfo     // For X-Content-Bundle-Version and X-Content-Hash headers
+	ClientIPOpts httpmw.ClientIPOptions // Client IP extraction options (TrustedHops, etc.)
 }

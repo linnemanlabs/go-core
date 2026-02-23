@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/log"
+	"github.com/linnemanlabs/go-core/log"
 )
 
 // spyLogger captures Error calls for assertions.

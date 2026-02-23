@@ -15,7 +15,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/kms"
 	kmstypes "github.com/aws/aws-sdk-go-v2/service/kms/types"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // kmsKeyFetcher is the subset of the KMS API needed to fetch a public key.

@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/httpmw"
+	"github.com/linnemanlabs/go-core/httpmw"
 )
 
 // newTestLimiter creates a limiter with a short TTL and cancellable context for tests.

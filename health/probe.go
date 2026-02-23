@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync/atomic"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // Probe is evaluated at request time

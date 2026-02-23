@@ -24,7 +24,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/httpmw"
+	"github.com/linnemanlabs/go-core/httpmw"
 )
 
 // visitor tracks a single IPs limiter and last activity

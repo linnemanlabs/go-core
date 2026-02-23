@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/keithlinneman/linnemanlabs-web/internal/xerrors"
+	"github.com/linnemanlabs/go-core/xerrors"
 )
 
 // Sigstore bundle format (cosign output)
