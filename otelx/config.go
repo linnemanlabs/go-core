@@ -58,14 +58,11 @@ func (c *Config) Validate() error {
 	return nil
 }
 
-func (c *Config) ToOptions(app, component, version string) *Options {
+func (c *Config) ToOptions() *Options {
 	return &Options{
-		Enabled:   c.EnableTracing,
-		Endpoint:  c.OTLPEndpoint,
-		Insecure:  c.Insecure,
-		Sample:    c.TraceSample,
-		Service:   app,
-		Component: component,
-		Version:   version,
+		Enabled:  c.EnableTracing,
+		Endpoint: c.OTLPEndpoint,
+		Insecure: c.Insecure,
+		Sample:   c.TraceSample,
 	}
 }

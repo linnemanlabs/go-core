@@ -1,4 +1,4 @@
-package profiling
+package prof
 
 import (
 	"errors"
