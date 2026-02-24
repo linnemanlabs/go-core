@@ -4,6 +4,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"net/http"
+
+	"github.com/linnemanlabs/go-core/health"
 )
 
 // Config adds opshttp-specific configuration fields to the
@@ -11,6 +14,17 @@ import (
 type Config struct {
 	Port        int
 	EnablePprof bool
+}
+
+// Options is the struct passed to opshttp.Start()
+type Options struct {
+	Port         int
+	Metrics      http.Handler
+	EnablePprof  bool
+	Health       health.Probe
+	Readiness    health.Probe
+	UseRecoverMW bool
+	OnPanic      func() // Optional callback for when panics are recovered, e.g. to trigger alerts or increment prometheus counters, etc.
 }
 
 // RegisterFlags binds Config fields to the given FlagSet with defaults inline
