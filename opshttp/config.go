@@ -32,3 +32,10 @@ func (c *Config) Validate() error {
 	}
 	return nil
 }
+
+func (c *Config) ToOptions() *Options {
+	return &Options{
+		Port:        c.Port,
+		EnablePprof: c.EnablePprof,
+	}
+}
