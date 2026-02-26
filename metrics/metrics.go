@@ -87,6 +87,11 @@ func New() *ServerMetrics {
 	return m
 }
 
+// Registry returns the underlying Prometheus registry, which can be used to register additional custom metrics as needed.
+func (m *ServerMetrics) Registry() *prometheus.Registry {
+	return m.reg
+}
+
 func (m *ServerMetrics) IncHttpPanic() {
 	m.httpPanicTotal.Inc()
 }
